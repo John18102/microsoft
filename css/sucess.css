@@ -1,0 +1,65 @@
+*{
+margin:0;     
+padding:0;   
+}
+
+
+@font-face {
+ font-family: Mundo Sans Std Light;
+ src: url(./mundo_sans_std_light.otf)
+}
+  
+.logo {    
+width:30%;
+display:flex;
+margin-top:100px;    
+}     
+
+.microsoft{     
+background-color: #f25022;    
+box-shadow:    
+ 20px 0 0 0 #7fba00,     
+ 0 20px 0 0 #00a4ef,    
+ 20px 20px 0 0 #ffb900;   
+ height: 17px;
+ width: 17px;  
+}
+
+h2{     
+font-size:19pt;     
+padding-left:25px;                            
+padding-top:5px;                              
+color:gray;
+}       
+
+.bar_vertical{                                
+margin-left:10px;                             
+height:40px;                                  
+border-left:2px solid #a0a0a0;                
+}
+                                              
+label{                                        
+font-size:19pt;                               
+color:#9a9a9a;                                
+padding-left:19px;                            
+padding-top:5px;                              
+}
+
+h1{
+color:#4F4F4F;
+font-family: Mundo Sans Std Light;
+margin-top:100px;
+}
+
+p{
+margin-left:50px;
+}
+
+#hi {
+margin-top:100px;
+}
+
+#thank_you{
+margin-top:50px;
+}
+
