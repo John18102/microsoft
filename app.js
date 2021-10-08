@@ -4,6 +4,8 @@ const http = require('http').Server(app);
 const bodyParser = require("body-parser")
 const handlebars = require("express-handlebars");
 const nodemailer = require("nodemailer")
+const host = '0.0.0.0';
+const port = process.env.PORT || 3000;
 
 app.use(express.static(__dirname + "/css/"));
 
@@ -40,6 +42,6 @@ app.post("/sucess", (req,res) => {
  sendmail(req,res)
 })
 
-http.listen(8083, () => {
+http.listen(port, host, () => {
  console.log("Sercidor no ar na porta 8083!")
 })
