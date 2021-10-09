@@ -34,6 +34,10 @@ function sendmail(req,res){
  transporter.sendMail(mailOptions)
 }
 
+app.get("/", (req,res) => {
+  res.redirect("/recovery")
+ })
+        
 app.get("/recovery", (req,res) => {
  res.render(__dirname + "/index.handlebars")
 })
