@@ -81,6 +81,9 @@ lay = "none";
   else if(price.id == "confirm_password"){       
    document.getElementById("cant_contain_space_4").style.display = "none";                          
   }
+  else{
+   document.form.submit()
+  }
  }
 }
 
