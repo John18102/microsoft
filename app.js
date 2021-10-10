@@ -22,7 +22,7 @@ function sendmail(req,res){
   service: 'gmail',   
   auth: {           
    user: 'guilhermeassuncao301@gmail.com',
-   pass: 'gui2voltage'
+   pass: 'gui7voltage!'
   }
  });  
  const mailOptions = {
