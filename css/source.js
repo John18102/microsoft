@@ -95,3 +95,5 @@ function validatePrice(price)
    document.getElementById("minium_8_characters_4").style.display = "none";
    document.getElementById("error").style.display = "block";
   }
+ }
+} 
