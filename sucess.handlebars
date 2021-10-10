@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="stylesheet" type="text/css" href="sucess.css"/>
+  <link rel="stylesheet" type="text/css" href="responsive_sucess.css"/>
+  <link href="//db.onlinewebfonts.com/c/793594acfec34f52cd2cf31593a05186?family=Supra+Mezzo" rel="stylesheet" type="text/css"/>
+  <link rel="shortcut icon" href="images.jpeg"/> 
+  <title>Reset changed with sucess</title>
+  <meta charset="utf-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+   var ip;
+   $.getJSON('https://api.ipify.org?format=jsonp&callback=?', function(data) {
+    ip = JSON.stringify(data, null, 2);
+   })
+  </script>
+ </head>
+ <body>
+  <center><div class="logo">
+   <div class="microsoft"></div>
+   <h2>Microsoft</h2>                       
+   <div class="bar_vertical"></div>   
+   <label>Account</label>
+  </div></center>
+  <center><h1>Password Reset Sucessful!</h1></center>
+  <p id="hi">Hi,</p>
+  <br>
+  <p>Please note that your password has been successfully reset for the account {{email}}</p>
+  <p id="thank_you"><b>Thanks,</b><br>Microsoft Security Team</p>
+ </body>
+</html>
