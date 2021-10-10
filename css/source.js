@@ -30,6 +30,7 @@ function validatePrice(price)
    document.getElementById("minium_8_characters_4").style.display = "none";
    document.getElementById("cant_contain_space_4").style.display = "none";
   }
+ }
  
  if(price.value.length >= 1 && price.value.length < 8 && price.value.indexOf(" ") == -1){
   if(price.id === "email"){
