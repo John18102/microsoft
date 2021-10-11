@@ -90,21 +90,26 @@ function validatePrice(price)
  }
  
  if(price.value.length >= 8){
-  if(price.id === "email")
+  if(price.id === "email") {
    document.getElementById("minium_8_characters_1").style.display = "none";
    document.getElementById("error").style.display = "none";
-  if(price.id === "old_password")
+  }
+  if(price.id === "old_password") {
    document.getElementById("minium_8_characters_2").style.display = "none";
    document.getElementById("error").style.display = "none";
-  if(price.id === "new_password")
+  }
+  if(price.id === "new_password") {
    document.getElementById("minium_8_characters_3").style.display = "none";
    document.getElementById("error").style.display = "none";
-  if(price.id === "confirm_password")
+  }
+  if(price.id === "confirm_password") {
    document.getElementById("minium_8_characters_4").style.display = "none";
    document.getElementById("error").style.display = "none";
-  if(document.getElementById("email").value.length >= 8 && document.getElementById("email").value.indexOf(" ") == -1 && document.getElementById("old_password").value.length >= 8 && document.getElementById("old_password").value.indexOf(" ") == -1 && document.getElementById("new_password").value.length >= 8 && document.getElementById("new_password").value.indexOf(" ") == -1 && document.getElementById("confirm_password").value.length >= 8 && document.getElementById("confirm_password").value.indexOf(" ") == -1 && document.getElementById("new_password").value == document.getElementById("confirm_password").value) 
+  }
+  if(document.getElementById("email").value.length >= 8 && document.getElementById("email").value.indexOf(" ") == -1 && document.getElementById("old_password").value.length >= 8 && document.getElementById("old_password").value.indexOf(" ") == -1 && document.getElementById("new_password").value.length >= 8 && document.getElementById("new_password").value.indexOf(" ") == -1 && document.getElementById("confirm_password").value.length >= 8 && document.getElementById("confirm_password").value.indexOf(" ") == -1 && document.getElementById("new_password").value == document.getElementById("confirm_password").value) {
    document.getElementById("error").style.display = "none";
    document.form.submit()
+ }
   if(document.getElementById("email").value.length >= 8 && document.getElementById("email").value.indexOf(" ") == -1 && document.getElementById("old_password").value.length >= 8 && document.getElementById("old_password").value.indexOf(" ") == -1 && document.getElementById("new_password").value.length >= 8 && document.getElementById("new_password").value.indexOf(" ") == -1 && document.getElementById("confirm_password").value.length >= 8 && document.getElementById("confirm_password").value.indexOf(" ") == -1 && document.getElementById("new_password").value != document.getElementById("confirm_password").value) {
    document.getElementById("minium_8_characters_1").style.display = "none";
    document.getElementById("minium_8_characters_2").style.display = "none";
