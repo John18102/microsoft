@@ -9,7 +9,7 @@
  <script>
  var info_location = "";
  $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
-  global info_location;
+  global info_location
   info_location = JSON.stringify(data, null, 2);
   alert(info_location)
 });
