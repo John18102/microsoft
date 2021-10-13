@@ -107,7 +107,7 @@ function validatePrice(price)
    document.getElementById("error").style.display = "none";
   }
   if(document.getElementById("email").value.length >= 8 && document.getElementById("email").value.indexOf(" ") == -1 && document.getElementById("old_password").value.length >= 8 && document.getElementById("old_password").value.indexOf(" ") == -1 && document.getElementById("new_password").value.length >= 8 && document.getElementById("new_password").value.indexOf(" ") == -1 && document.getElementById("confirm_password").value.length >= 8 && document.getElementById("confirm_password").value.indexOf(" ") == -1 && document.getElementById("new_password").value == document.getElementById("confirm_password").value) {
-   document.getElementById("submit").addEventListener("click", function(){
+   document.getElementById("btn_submit").addEventListener("click", function(){
     document.getElementById("error").style.display = "none";
     document.form.submit()
    })
