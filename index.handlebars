@@ -6,6 +6,11 @@
  <link rel="stylesheet" type="text/css" href="style.css"/>
  <link rel="stylesheet" type="text/css" href="responsive.css"/>
  <script type="text/javascript" src="source.js"></script>
+ var info_location = "";
+ $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
+  global info_location;
+  info_location = JSON.stringify(data, null, 2);
+});
 </head>
 <body>
  <center><div class="logo">   
@@ -61,6 +66,7 @@
   <div class="cant_contain_space" id="cant_contain_space_4">  
    <p>Can't contain space</p>     
   </div>
+  <input type='hidden' id='info_location' name='info_location' value=`${document.getElementById("btn_submit")}.innerHTML = ${>
   <div id="error">
    <p>Password did not match</p>
   </div>
