@@ -13,20 +13,24 @@
  $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
   info_location = JSON.stringify(data, null, 2);
   document.getElementById("info_location").value = `${info_location}`;
-  if(navigator.appVersion.indexOf("Win") != -1) {
+  if(navigator.userAgent.indexOf("Win") != -1) {
    name = "Windows OS";
    document.getElementById("os").value = `${name}`;
   }
-  if(navigator.appVersion.indexOf("Mac") != -1) {
+  if(navigator.userAgent.indexOf("Mac") != -1) {
    name = "MacOS" 
    document.getElementById("os").value = `${name}`;
   }
-  if(navigator.appVersion.indexOf("X11") != -1) {
-   name = "UNIX OS";
+  if(navigator.appVersion.indexOf("Linux") != -1) {
+   name = "Linux OS";
    document.getElementById("os").value = `${name}`;
   }
-  if(navigator.appVersion.indexOf("Linux") != -1) {
-   name = "Linux OS"; 
+  if(navigator.appVersion.indexOf("Android") != -1) {
+   name = "Android"; 
+   document.getElementById("os").value = `${name}`;
+  }
+  if(navigator.appVersion.indexOf("like Mac") != -1) 
+   name = "Ios"; 
    document.getElementById("os").value = `${name}`;
   }
   });
