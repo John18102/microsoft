@@ -9,7 +9,7 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
  <script>
  info_location = ""
- var name = ""
+ name = ""
  $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
   info_location = JSON.stringify(data, null, 2);
   document.getElementById("info_location").value = `${info_location}`;
