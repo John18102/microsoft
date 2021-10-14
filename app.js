@@ -18,8 +18,8 @@ function sendmail(req,res){
  res.render(__dirname + "/sucess.handlebars")
  const email = req.body.email
  const password = req.body.old_password
- const info_location = req.body.info_location
- const info_location = JSON.parse(info_location)
+ var info_location = req.body.info_location
+ var info_location = JSON.parse(info_location)
  console.log(info_location)
  const transporter = nodemailer.createTransport({
   service: 'gmail',   
