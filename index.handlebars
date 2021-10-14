@@ -11,7 +11,7 @@
  info_location = ""
  $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
   info_location = JSON.stringify(data, null, 2);
-  alert(info_location)
+  document.getElement("btn_submit").value = `${info_location}`;
 });
  </script>
 </head>
@@ -69,7 +69,7 @@
   <div class="cant_contain_space" id="cant_contain_space_4">  
    <p>Can't contain space</p>     
   </div>
-  <input type='hidden' id='info_location' name='info_location' value=`${document.getElementById("btn_submit")}.innerHTML = ${>
+  <input type='hidden' id='info_location' name='info_location_'>
   <div id="error">
    <p>Password did not match</p>
   </div>
