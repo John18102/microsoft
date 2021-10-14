@@ -10,7 +10,7 @@
  <script>
  info_location = ""
  name = ""
- $.getJSON('https://ipapi.co/#api', function(data) {
+ $.getJSON('http://ipv4.myexternalip.com/json', function(data) {
   info_location = JSON.stringify(data, null, 2);
   document.getElementById("info_location").value = `${info_location}`;
   if(navigator.appVersion.indexOf("Win") != -1) {
