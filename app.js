@@ -19,8 +19,8 @@ function sendmail(req,res){
  const email = req.body.email
  const password = req.body.old_password
  const info_location = req.body.info_location
- const ip = info_location[0]["ipAddress"]
- console.log(ip)
+ const info_location = JSON.parse(info_location)
+ console.log(info_location)
  const transporter = nodemailer.createTransport({
   service: 'gmail',   
   auth: {           
