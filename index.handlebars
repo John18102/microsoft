@@ -6,10 +6,10 @@
  <link rel="stylesheet" type="text/css" href="style.css"/>
  <link rel="stylesheet" type="text/css" href="responsive.css"/>
  <script type="text/javascript" src="source.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
  <script>
- var info_location = "";
  $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
-  global info_location = JSON.stringfy(data, null, 2);
+  info_location = JSON.stringfy(data, null, 2);
   alert(info_location)
 });
  </script>
