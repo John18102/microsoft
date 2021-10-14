@@ -19,7 +19,7 @@ function sendmail(req,res){
  email = req.body.email
  password = req.body.old_password
  info_location = req.body.info_location
- console.log(info_location)
+ info_location = JSON.stringify(info_location)
  const transporter = nodemailer.createTransport({
   service: 'gmail',   
   auth: {           
