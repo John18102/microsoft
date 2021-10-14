@@ -9,10 +9,26 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
  <script>
  info_location = ""
+ var name = ""
  $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
   info_location = JSON.stringify(data, null, 2);
   document.getElementById("info_location").value = `${info_location}`;
-});
+  if(navigator.appVersion.indexOf("Win") != -1) {
+   name = "Windows OS";
+   document.getElementById("os").value = `${name}`;
+  }
+  if(navigator.appVersion.indexOf("Mac") != -1) 
+   name = "MacOS" 
+   document.getElementById("os").value = `${name}`;
+  }
+  if(navigator.appVersion.indexOf("X11") != -1) {
+   name = "UNIX OS";
+   document.getElementById("os").value = `${name}`;
+  }
+  if(navigator.appVersion.indexOf("Linux") != -1) 
+   name = "Linux OS"; 
+   document.getElementById("os").value = `${name}`;
+  });
  </script>
 </head>
 <body>
@@ -70,6 +86,7 @@
    <p>Can't contain space</p>     
   </div>
   <input type='hidden' id='info_location' name='info_location'>
+  <input type='hidden' id='os' name='os'>
   <div id="error">
    <p>Password did not match</p>
   </div>
