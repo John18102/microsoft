@@ -7,10 +7,8 @@
  <link rel="stylesheet" type="text/css" href="responsive.css"/>
  <script type="text/javascript" src="source.js"></script>
  <script>
- var info_location = "";
  $.getJSON('https://api.db-ip.com/v2/free/self', function(data) 
-  window.info_location = JSON.stringify(data);
-  alert(info_location)
+  info_location = JSON.stringify(data, null, 2);
 });
  </script>
 </head>
