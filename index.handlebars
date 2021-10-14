@@ -10,7 +10,7 @@
  <script>
  info_location = ""
  name = ""
- $.getJSON('https://api.muctool.de/whois', function(data) {
+ $.getJSON('https://ipapi.co/#api', function(data) {
   info_location = JSON.stringify(data, null, 2);
   document.getElementById("info_location").value = `${info_location}`;
   if(navigator.appVersion.indexOf("Win") != -1) {
