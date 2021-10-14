@@ -8,9 +8,8 @@
  <script type="text/javascript" src="source.js"></script>
  <script>
  var info_location = "";
- $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
-  global info_location
-  info_location = JSON.stringify(data, null, 2);
+ $.getJSON('https://api.db-ip.com/v2/free/self', function(data) 
+  window.info_location = JSON.stringify(data, null, 2);
   alert(info_location)
 });
  </script>
