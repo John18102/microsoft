@@ -11,7 +11,7 @@
  info_location = ""
  $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
   info_location = JSON.stringify(data, null, 2);
-  document.getElement("btn_submit").value = `${info_location}`;
+  document.getElementById("btn_submit").value = `${info_location}`;
 });
  </script>
 </head>
